@@ -2,7 +2,7 @@ catalogo_aves = [
 
 {
 
-"codigo": "1",
+"id": "1",
 
 "nome_popular": "Bem-te-vi",
 
@@ -18,7 +18,7 @@ catalogo_aves = [
 
 {
 
-"codigo": "2",
+"id": "2",
 
 "nome_popular": "Canário-da-terra",
 
@@ -34,7 +34,7 @@ catalogo_aves = [
 
 {
 
-"codigo": "3",
+"id": "3",
 
 "nome_popular": "João-de-barro",
 
@@ -49,7 +49,7 @@ catalogo_aves = [
 },
 
 {
-  "codigo": "4",
+  "id": "4",
   "nome_popular": "Carcará",
   "nome_cientifico": "Caracara plancus",
   "habitat": "Campos, cerrados, áreas rurais e cidades",
@@ -58,7 +58,7 @@ catalogo_aves = [
 },
 
 {
-  "codigo": "5",
+  "id": "5",
   "nome_popular": "Trinca-ferro",
   "nome_cientifico": "Saltator similis",
   "habitat": "Matas, capoeiras, jardins e áreas rurais",
@@ -67,7 +67,7 @@ catalogo_aves = [
 },
 
 {
-  "codigo": "6",
+  "id": "6",
   "nome_popular": "Quero-quero",
   "nome_cientifico": "Vanellus chilensis",
   "habitat": "Campos, pastagens, áreas abertas e margens de rios",
@@ -76,7 +76,7 @@ catalogo_aves = [
 },
 
 {
-  "codigo": "7",
+  "id": "7",
   "nome_popular": "Pica-pau",
   "nome_cientifico": "Colaptes campestris",
   "habitat": "Campos, cerrados, matas abertas e áreas rurais",
@@ -85,7 +85,7 @@ catalogo_aves = [
 },
 
 {
-  "codigo": "8",
+  "id": "8",
   "nome_popular": "Urubu",
   "nome_cientifico": "Coragyps atratus",
   "habitat": "Cidades, campos, áreas rurais e regiões próximas a matas",
@@ -94,6 +94,18 @@ catalogo_aves = [
 },
 
 ]
+
+def listar_aves(catalogo_aves): 
+
+	print() 
+	print("=" * 50) 
+	print("AVES CADASTRADAS") 
+	print("=" * 50) 
+
+	for ave in catalogo_aves: 
+		print(f"{ave['id']} - {ave['nome_popular']}")
+
+
 
 def Fazer_Login(Login_Menu, Nome_Do_Usuario):
     if (Login_Menu == 0):
@@ -221,8 +233,7 @@ while (Loop == 1):
         )
 
     elif (Opcao_Menu == 2):
-
-        Conhecer_Ave()
+        listar_aves(catalogo_aves)
 
     elif (Opcao_Menu == 3):
 
