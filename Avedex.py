@@ -46,7 +46,52 @@ catalogo_aves = [
 
 "curiosidade": "Constrói um ninho de barro característico."
 
-}
+},
+
+{
+  "codigo": "4",
+  "nome_popular": "Carcará",
+  "nome_cientifico": "Caracara plancus",
+  "habitat": "Campos, cerrados, áreas rurais e cidades",
+  "alimentacao": "Pequenos animais, insetos, ovos e carcaças",
+  "curiosidade": "É uma ave de rapina muito adaptável e pode ser encontrada em diversas regiões do Brasil."
+},
+
+{
+  "codigo": "5",
+  "nome_popular": "Trinca-ferro",
+  "nome_cientifico": "Saltator similis",
+  "habitat": "Matas, capoeiras, jardins e áreas rurais",
+  "alimentacao": "Frutos, sementes e pequenos insetos",
+  "curiosidade": "É conhecido pelo canto forte e melodioso, sendo bastante apreciado pelos observadores de aves."
+},
+
+{
+  "codigo": "6",
+  "nome_popular": "Quero-quero",
+  "nome_cientifico": "Vanellus chilensis",
+  "habitat": "Campos, pastagens, áreas abertas e margens de rios",
+  "alimentacao": "Insetos, minhocas e outros pequenos invertebrados",
+  "curiosidade": "Possui um canto característico e costuma emitir alertas quando percebe algum perigo próximo ao ninho."
+},
+
+{
+  "codigo": "7",
+  "nome_popular": "Pica-pau",
+  "nome_cientifico": "Colaptes campestris",
+  "habitat": "Campos, cerrados, matas abertas e áreas rurais",
+  "alimentacao": "Insetos, larvas, frutos e sementes",
+  "curiosidade": "Usa seu bico forte para perfurar troncos em busca de alimento e para construir cavidades."
+},
+
+{
+  "codigo": "8",
+  "nome_popular": "Urubu",
+  "nome_cientifico": "Coragyps atratus",
+  "habitat": "Cidades, campos, áreas rurais e regiões próximas a matas",
+  "alimentacao": "Principalmente carcaças de animais",
+  "curiosidade": "Tem importante função ecológica ao consumir animais mortos e ajudar na limpeza do ambiente."
+},
 
 ]
 
@@ -79,7 +124,7 @@ def Fazer_Login(Login_Menu, Nome_Do_Usuario):
         return Login_Menu, Cidade_Do_Usuario, Ave_Favorita
 
 
-def Conhecer_Ave():
+
 def Conhecer_Ave():
     print("=" * 35)
     print("         CATÁLOGO DE AVES")
